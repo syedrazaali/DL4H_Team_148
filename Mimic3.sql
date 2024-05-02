@@ -1,6 +1,8 @@
-COPY chartevents FROM 'C:\Users\Raza_Ali\Downloads\CHARTEVENTS.csv' DELIMITER ',' CSV HEADER;
-COPY labevents FROM 'C:\Users\Raza_Ali\Downloads\LABEVENTS.csv' DELIMITER ',' CSV HEADER;
-COPY noteevents FROM 'C:\Users\Raza_Ali\Downloads\NOTEEVENTS.csv' DELIMITER ',' CSV HEADER;
+-- Assumption is user has access to and downloaded files chartevents, labevents, notevents to begin preprocessing data before passing to python layer
+
+COPY chartevents FROM 'path/to/CHARTEVENTS.csv' DELIMITER ',' CSV HEADER; -- 
+COPY labevents FROM 'path/to/LABEVENTS.csv' DELIMITER ',' CSV HEADER;
+COPY noteevents FROM 'path/to/NOTEEVENTS.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE chartevents (
     ROW_ID INT,
