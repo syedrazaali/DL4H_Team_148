@@ -40,10 +40,10 @@ drive.mount('/content/drive')
 ```
 - **Run the notebook** to perform further data processing, model training, and evaluation.
 
-License
+## License
 Distributed under the MIT License. See LICENSE for more information.
 
-Citation and References
+## Citation and References
 If you use this model or the methodology in your research, please cite the original paper and this repository:
 ```
 "@article{zhang2023improving,
